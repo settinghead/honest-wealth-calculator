@@ -1,0 +1,2 @@
+{:require  [honest-wealth-calculator.app]
+ :init-fns [honest-wealth-calculator.app/init]}
