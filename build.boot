@@ -20,9 +20,9 @@
 
 (deftask build []
   (comp (speak)
-        
+
         (cljs)
-        
+
         (garden :styles-var 'honest-wealth-calculator.styles/screen
 :output-to "css/garden.css")
         (sass :output-dir "css")))
@@ -58,3 +58,9 @@
   []
   (comp (development)
         (run)))
+
+(deftask prod
+  "Simple alias to run application in development mode"
+  []
+  (comp (production)
+        (build)))
