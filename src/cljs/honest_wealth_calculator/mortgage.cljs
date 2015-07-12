@@ -6,4 +6,4 @@
         compound (- (.pow js/Math (+ 1 monthly-interest) months) 1)
         monthly-payment (* amount (/ acc compound))]
     {:monthly-payment monthly-payment
-     :interest-cost (- (* monthly-payment months) amount)}))
+     :total-interest-cost (- (* monthly-payment months) amount)}))
